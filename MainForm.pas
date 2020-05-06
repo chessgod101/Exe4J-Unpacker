@@ -40,6 +40,7 @@ MainClass,FileNames:ansiString;
 
 FileNamesA:array of ansiString;
 implementation
+{$R *.dfm}
 
 Function GetOffsetOfAppendedData(fH:THandle;Var offset:Cardinal):Boolean;
 var
@@ -65,7 +66,7 @@ end;
 end;
 End;
 
-{$R *.dfm}
+
 Function SaveFile(FileName:wideString;data:Pbyte;size:Cardinal;overwrite:Boolean):Boolean;
 var
 fh:THandle;
